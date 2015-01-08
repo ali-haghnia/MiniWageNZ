@@ -1,0 +1,166 @@
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+<LinearLayout 
+    android:id="@+id/MainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right|center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="vertical"
+    android:textAlignment="center"
+    tools:context=".MainActivity" >
+    
+    <LinearLayout
+        android:id="@+id/LL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:freezesText="true"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp"
+            android:text="@string/weekly_hours_"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="HH"
+            android:inputType="number"
+            android:maxLength="2"
+            android:nextFocusDown="@+id/etMin"
+            android:selectAllOnFocus="true"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+       
+        <TextView
+            android:id="@+id/tvColon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/etMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="MM"
+            android:inputType="number"
+            android:maxLength="2"
+            android:nextFocusUp="@id/etHours"
+            android:selectAllOnFocus="true"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/skbHours"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:thumbOffset="8dp" />
+
+    <LinearLayout
+        android:id="@+id/LL3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tvWage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_marginTop="5dp"
+            android:freezesText="true"
+            android:maxHeight="10dp"
+            android:paddingTop="5dp"
+            android:text="Hourly Wage($):"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etWage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal"
+            android:maxLength="5"
+            android:selectAllOnFocus="true"
+            android:text="13.75"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/skbWage"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:thumbOffset="8dp" />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:focusableInTouchMode="false"
+        android:freezesText="true"
+        android:text="Calculate Salary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textAlignment="viewStart"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+</ScrollView>
+

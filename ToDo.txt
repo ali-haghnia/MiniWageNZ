@@ -1,0 +1,2 @@
+to tell user to edit the wage using text box
+te tell user they can change the max and min of sliders.

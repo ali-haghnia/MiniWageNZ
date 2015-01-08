@@ -1,0 +1,92 @@
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+
+
+
+//	etTime.setOnFocusChangeListener(new OnFocusChangeListener() {
+//
+//		    @Override
+//		    public void onFocusChange(View v, boolean hasFocus) {
+//		    	if (hasFocus) return;
+////		    	Toast.makeText(getApplicationContext(), "focus" ,Toast.LENGTH_LONG).show();
+//		    	String strTime = etTime.getText().toString();
+//		    	if (strTime.equals("") || strTime.equals(":")) etTime.setText("40:00");
+//		    	Integer intSepLoc = strTime.indexOf(":");
+//		    	String strHours = "";
+//		    	if(intSepLoc == -1)	strTime = strTime + ":00";
+//		    	else if (intSepLoc == 0) strTime = "00" + strTime;
+//		    	else if (intSepLoc == strTime.length()-1) strTime = strTime + "00";
+//		    	etTime.setText(strTime);
+//	    		intSepLoc = strTime.indexOf(":");
+//	    		Log.d("Sep:",String.valueOf(intSepLoc));
+//		    	strHours = strTime.substring(0, intSepLoc);
+//		    	Log.d("Hours",strHours);
+//		    	String strMin = strTime.substring(intSepLoc+1);
+//		    	Log.d("Minutes",strMin);
+////		    	Toast.makeText(getApplicationContext(), strHours + " ... " + strMin ,Toast.LENGTH_LONG).show();
+//		    	blnNoChange = true;
+//		    	skbHours.setProgress((Integer.valueOf(strHours)*4) + (Integer.valueOf(strMin)/15));
+////		    	if (strTime.length() == 0)
+////		    	{
+////		    		skbHours.setProgress(0);
+////					return;
+////		    	}
+////				int intS = Integer.valueOf(strTime);
+////				if (intS >= 60)
+////				{
+////					blnNoChange = true;
+////					skbHours.setProgress(59);
+////				}
+////				else if (intS < 60 && intS > 0)
+////					skbHours.setProgress(intS - 1);
+//		    }
+//		});
+		
+//	etTime.addTextChangedListener(new TextWatcher() {
+//			
+//			@Override
+//			public void onTextChanged(CharSequence s, int start, int before, int count) {
+//				// TODO Auto-generated method stub
+//				
+//			}
+//			
+//			@Override
+//			public void beforeTextChanged(CharSequence s, int start, int count,	int after) {
+//				// TODO Auto-generated method stub
+//				//if (s.toString().contains(":")) Log.d("Before:","start: " + String.valueOf(start) + "\ncount: " + String.valueOf(count) + "\nafter: " + String.valueOf(after));
+//			}
+//			
+//			@Override
+//			public void afterTextChanged(Editable s) {
+//				// TODO Auto-generated method stub
+//				if (bln)
+//				{
+//					bln = false;
+//					return;
+//				}
+//				String str = s.toString();
+////				Toast.makeText(getApplicationContext(), "After" ,Toast.LENGTH_LONG).show();
+////				Log.d("s", String.valueOf(s.length()));
+//				if (s.length() ==  0)
+//				{
+//					skbHours.setProgress(0);
+//					return;
+//				}
+//				Boolean gotColon = false;
+//				for (int i=0; i < s.length(); i++)
+//				{	
+//					if(!String.valueOf(s.charAt(i)).equals(":")) continue;
+//					if (!gotColon) gotColon = true;
+//					else s.replace(i, i+1, "");
+//				}
+//				
+////				int intS = Integer.valueOf(s.toString());
+////				if (intS >= 60)
+////					skbHours.setProgress(59);
+////				else if (intS < 60 && intS > 0)
+////					skbHours.setProgress(intS - 1);
+//				}
+//		});
+
